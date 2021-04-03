@@ -568,4 +568,8 @@ class Account < ApplicationRecord
   def clean_feed_manager
     FeedManager.instance.clean_feeds!(:home, [id])
   end
+
+  def debugfunc
+    return
+  end
 end
