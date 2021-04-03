@@ -10,7 +10,7 @@ on:
       - build
 jobs:
   build-and-push:
-    runs-on: ubuntu-18.04
+    runs-on: self-hosted
     timeout-minutes: 300
     steps:
     - uses: actions/checkout@v1    
