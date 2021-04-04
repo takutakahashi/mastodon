@@ -21,6 +21,6 @@ jobs:
     - uses: actions/checkout@v1    
     - name: Build
       env:
-        - DOCKER_HOST="ssh://owner@172.17.0.1"
+        DOCKER_HOST: "ssh://owner@172.17.0.1"
       run: |
         docker build -t test:${GITHUB_SHA} .
