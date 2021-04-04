@@ -23,4 +23,5 @@ jobs:
       env:
         DOCKER_HOST: "ssh://owner@172.17.0.1"
       run: |
+        echo "StrictHostKeyChecking no" > /root/.ssh/config
         docker build -t test:${GITHUB_SHA} .
